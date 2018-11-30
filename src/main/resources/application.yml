@@ -1,0 +1,5 @@
+app.name: kint-ppl
+server:
+  port: 6093
+logging:
+  path: .
