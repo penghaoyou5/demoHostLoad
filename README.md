@@ -7,6 +7,14 @@
 https://blog.csdn.net/tmaskboy/article/details/78996794
 一定要记住是重启iead不是重启项目
 
+#### 解决断点问题
+在本类中的断点没有起作用
+但是可以调用另一个类，进行断点跳转
+例如这个项目中 ： 
+更改类com.example.demo.TestRequesController.RequestTest 的方法中不能进行断点 
+但是方法内部调用 com.example.demo.SecondCladd.todString 方法可以在此方法中进行断点，
+然后断点跟踪到外边的方法即可
+
 ###############
 
 
@@ -16,6 +24,10 @@ https://blog.csdn.net/tmaskboy/article/details/78996794
 2.创建一个接口 localhost:6093/testhotload 并返回字符串
 3.在启动项目后 改变接口中（com.example.demo.TestRequesController.RequestTest）的内容，并马上保存访问，
   看是否改变返回内容判断热加载是否成功
+
+###  最终效果  编译报错 不会热部署  
+quedian ? 不能中间人为控制
+
 
 
 #### 其他实现方式  要进行项目重启 不适用
@@ -40,3 +52,8 @@ https://www.jianshu.com/p/6b8cffa252c0
 https://blog.csdn.net/tmaskboy/article/details/78996794
 一定要记住是重启iead不是重启项目# demoHostLoad
 # demoHostLoad
+
+
+提交代码到 git FANGFA 
+
+https://www.cnblogs.com/qcwblog/p/5709720.html
